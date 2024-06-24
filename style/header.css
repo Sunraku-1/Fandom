@@ -1,0 +1,139 @@
+.header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
+.mc_logo{
+  margin-right: 15px;
+
+}
+.leader_logo{
+  margin-right: 15px;
+}
+.location_logo{
+  margin-right: 15px;
+}
+.header_menu{
+  display: none;
+}
+.header_bars{
+  color: var(--clr-light);
+  width: var(--size-2XL);
+  height: var(--size-2XL);
+  display: block;
+  justify-content: flex-end;
+}
+.anime_logo{
+  text-align: left;
+  margin-right: 500px;
+  color: var(--clr-rose);
+  display: block;
+  display: flex;
+  flex-direction: column; 
+
+}
+.header_link{
+  margin-bottom: 5px;
+}
+
+/*XS*/
+/*@media (min-width: 475px) {
+  
+}*/
+
+/*SM*/
+/*@media (min-width: 640px) {
+  
+} */
+
+
+/*Md*/
+@media (min-width: 768px) {
+  .header_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 2em;
+  }
+  .header_link{
+    font-size: var(--size-XS);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-rose);
+    transition: color 0.3s;
+  
+  }
+  .anime_logo{
+    margin-right: 250px;
+  }
+  .header_link:hover{
+    color: var(--clr-darkrose);
+  }
+  .header_line{
+    border: 1px solid var(--clr-slate600);
+    padding-top: 1.5em;
+  }
+  .header_sun{
+    display: block;
+    color: var(--clr-slate400);
+    width: var(--size-base);
+    height: var(--size-base);
+  }
+  .header_resume{
+    font-size: var(--size-2XL);
+  }
+  .header_bars{
+    display: none;
+    justify-content: flex-end;
+  }
+  .anime_logo{
+    margin-right: 400px;
+  }
+}
+
+/*LG*/
+@media (min-width: 1024px) {
+  .header_link{
+    font-size: var(--size-base);
+  }
+  .header_sun{
+    width: var(--size-XL);
+    height: var(--size-XL);
+  }
+  .header_resume{
+    font-size: var(--size-SM);
+  }
+  .anime_logo{
+    margin-right: 490px;
+  }
+}
+/*XL*/
+@media (min-width: 1280px) {
+  .header_link{
+    font-size: var(--size-base);
+  }
+  .header_sun{
+    width: var(--size-XL);
+    height: var(--size-XL);
+  }
+  .header_resume{
+    font-size: var(--size-SM);
+  }
+  .anime_logo{
+    margin-right: 490px;
+  }
+  
+}
+
+
+/*XL
+@media (min-width: 1536px) {
+  .anime_logo{
+    margin-right: 510px;
+  }
+
+}*/

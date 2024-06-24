@@ -1,0 +1,98 @@
+
+.hero{
+  /*dito may di ako nilagay na part sa image*/
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  gap: 1rem;
+  margin-top: 10rem;
+}
+.hero_title{
+  color: var(--clr-rose);
+  font-size: var(--size-4XL);
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+}
+
+.watch_btn{
+  align-items: left;
+  display: flex;
+  padding-top: 3em;
+  text-transform: capitalize;
+  font-size: var(--size-SM);
+}
+.hero_description{
+  color: var(--clr-darkrose);
+  max-width: 60ch;
+  font-size: var(--size-SM);
+}
+/*XS*/
+@media (min-width: 475px) {
+  .hero{
+    gap: 1rem;
+  }
+  .hero_title{
+   
+    font-size: var(--size-5XL);
+   
+  
+  }
+  
+  .watch_btn{
+    font-size: var(--size-base);
+  }
+  .hero_description{
+    font-size: var(--size-base);
+  }
+ 
+}
+
+/*SM*/
+/*@media (min-width: 640px) {
+  
+} */
+
+/*Md*/
+/*@media (min-width: 768px) {
+ 
+}*/
+
+/*LG*/
+@media (min-width: 1024px) {
+  .hero_title{
+    font-size: var(--size-6XL);
+  }
+  
+  .watch_btn{
+    font-size: var(--size-LG);
+  }
+  .hero_description{
+    font-size: var(--size-LG);
+  }
+  
+}
+
+/*XL*/
+@media (min-width: 1280px) {
+  .hero{
+    gap: 2rem;
+  }
+
+  .hero_title{
+    font-size: var(--size-6XL);
+  }
+  
+  .watch_btn{
+    font-size: var(--size-XL);
+  }
+  .hero_description{
+    font-size: var(--size-XL);
+  }
+}
+
+/*XL*/
+/*@media (min-width: 1536px) {
+

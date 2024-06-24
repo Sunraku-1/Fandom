@@ -1,0 +1,127 @@
+.featured_title{
+  font-size: var(--size-2XL);
+  color: var(--clr-light);
+  text-transform: uppercase;
+}
+.featured_description{
+  max-width: 60ch;
+  color: var(--clr-light600);
+  font-size: var(--size-SM);
+  margin: 1rem 0;
+}
+.feature_hr{
+  border-color: var(--clr-slate800);
+}
+.featured_img-container{
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*border: red solid 1px;*/
+  
+}
+/*Eto yung sa image need kong paliitin yung size */
+.featured_img-wrapper{
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center
+}
+.featured_img-wrapper::after{
+  content: '';
+  background-color: rgba(79, 70, 229, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: backround-color 0.3s;
+
+}
+.featured_img-wrapper:hover::after{
+  background-color: rgba(79, 70, 229, 0.1);
+
+}
+.featured_img-demonslayer{
+  width: 300px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.zinitsu{
+  height: 531px;
+}
+/*
+.featured_wrapper{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+*/
+/*XS*/
+@media (min-width: 475px) {
+  .featured_title{
+    font-size: var(--size-3XL);
+  }
+  .featured_description{
+    font-size: var(--size-base);
+    margin: 1.5rem 0;
+  }
+  /*
+  .featured_img-container{
+    margin-top: 1.5rem;
+    grid-gap: 1.5rem;
+   
+  }
+  kasamato nung nagiging 2 lang yung picture
+*/
+}
+
+/*SM*/
+/*@media (min-width: 640px) {
+  .featured_img-container{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  anoto nagiging 2 lang yung picture ang panget sobrang laki kaya tinangal ko
+} */
+
+/*Md*/
+/*@media (min-width: 768px) {
+ 
+}*/
+
+/*LG*/
+@media (min-width: 1024px) {
+  .featured_title{
+    font-size: var(--size-4XL);
+  }
+  .featured_description{
+    font-size: var(--size-LG);
+  }
+  
+}
+
+/*XL*/
+@media (min-width: 1280px) {
+  .featured_title{
+    font-size: var(--size-5XL);
+  }
+  .featured_description{
+    font-size: var(--size-XL);
+    margin: 2rem 0;
+  }
+  /*
+  .featured_img-container{
+    margin-top: 2rem;
+    grid-gap: 2rem;
+   
+  }
+  kasamato nung nagiging 2 lang yung picture
+  */
+}
+
+/*XL*/
+/*@media (min-width: 1536px) {
+
+}*/
